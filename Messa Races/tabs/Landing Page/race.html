@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Races List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .race-category {
+            margin: 20px 0;
+        }
+        .race-category ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .race-category li {
+            background-color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .race-category li:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Race List</h1>
+        <p>Click on any race to learn more about them.</p>
+    </header>
+
+    <div class="container">
+        <!-- Primordial Races -->
+        <div class="race-category">
+            <h2>Primordial Races</h2>
+            <ul>
+                <li onclick="goToRace('dragons.html')">Dragons</li>
+                <li onclick="goToRace('dragonkins.html')">Dragonkins</li>
+                <li onclick="goToRace('primordial_elf.html')">Primordial Elves</li>
+                <li onclick="goToRace('nephilim.html')">Nephilims</li>
+            </ul>
+        </div>
+
+        <!-- Normal Races -->
+        <div class="race-category">
+            <h2>Normal Races</h2>
+            <ul>
+                <li onclick="goToRace('humans.html')">Humans</li>
+                <li onclick="goToRace('aeternans.html')">Aeternans</li>
+                <li onclick="goToRace('high_elves.html')">High Elves</li>
+                <li onclick="goToRace('wood_elves.html')">Wood Elves</li>
+                <li onclick="goToRace('dark_elves.html')">Dark Elves</li>
+                <li onclick="goToRace('moon_elves.html')">Moon Elves</li>
+                <li onclick="goToRace('dwarves.html')">Dwarves</li>
+                <li onclick="goToRace('tigris.html')">Tigris</li>
+                <li onclick="goToRace('onis.html')">Onis</li>
+                <li onclick="goToRace('doppels.html')">Doppels</li>
+                <li onclick="goToRace('felishans.html')">Felishans</li>
+                <li onclick="goToRace('inarian.html')">Inarians</li>
+                <li onclick="goToRace('argallians.html')">Argallians</li>
+            </ul>
+        </div>
+
+        <!-- Other Races -->
+        <div class="race-category">
+            <h2>Other Races</h2>
+            <ul>
+                <li onclick="goToRace('celestials.html')">Celestials</li>
+                <li onclick="goToRace('fells.html')">Fells</li>
+                <li onclick="goToRace('vampires.html')">Vampires</li>
+                <li onclick="goToRace('demons.html')">Demons</li>
+                <li onclick="goToRace('devils.html')">Devils</li>
+                <li onclick="goToRace('fey.html')">Fey</li>
+                <li onclick="goToRace('fiends.html')">Fiends</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function goToRace(racePage) {
+            // Log or track the click if needed
+            console.log("Navigating to:", racePage);
+
+            // This allows the link to still work and navigate to the page
+            window.location.href = racePage;
+        }
+    </script>
+
+</body>
+</html>
